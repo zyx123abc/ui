@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>angular test</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <script src="../assets/bootstrap/js/jquery.min.js"></script>
+  <script src="../assets/bootstrap/js/popper.min.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+  <!-- angular -->
+  <script src="../assets/angularjs/angular.min.js"></script>
+
+  <!-- vis -->
+  <script src="../assets/vis-network/dist/vis-network.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/vis-network/dist/vis-network.css">
+  
+
+
+
+  <!-- <script src="../js/angular-vis.js"></script> -->
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/locales.min.js"></script> -->
+
+  <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+  <!-- <script src="../js/ui_vis_options.js"></script> -->
+</head>
+
+<div ng-app="directiveControlDemo">
+  <div ng-controller="MainCtrl">
+    <button ng-click="networks.init()">Call directive function</button>
+        
+    <p>
+      <b>In controller scope:</b>
+      {{networks}}
+    </p>
+    <p>
+      <b>In directive scope:</b>
+      <focusin network="networks"></focusin>
+    </p>
+    <p>
+      <b>Without control object:</b>
+      <focusin></focusin>
+    </p>
+  </div>
+</div>
+
+
+
+</html>
